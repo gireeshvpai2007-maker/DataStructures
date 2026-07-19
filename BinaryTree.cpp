@@ -69,16 +69,21 @@ void postorder(Node* root)
     postorder(root->right);
     cout<<root->data<<" ";
 }
-void levelorder(Node* root)
+vector<vector<int>> levelorder(Node* root)
 {
    
-    std::queue<Node*> q;
+   vector<vector<int>>ans;
+    queue<Node*> q;
     q.push(root);
+    
     while(!q.empty())
-    {
+    { int size=q.size();
+        vector<int>level;
+         for(int i=0;i<size;i++)
+         {
         Node* temp = q.front();
-        cout<<temp->data<<" ";
         q.pop();
+         level.push_back(temp->data);
         if(temp->left!=NULL)
         {
             q.push(temp->left);
@@ -87,19 +92,35 @@ void levelorder(Node* root)
         {
             q.push(temp->right);
         }
+        
+    }
+    ans.push_back(level);
 }
-cout<<endl;
+ return ans;
 }
 int main()
 {
     vector<int> v = {1,2,-1,-1,3,4,-1,-1,5,-1,-1};  
     Node * root = buildTree(v);
-  
+    
+    cout<<"Preorder Traversal:"<<endl;
     preorder(root);
     cout<<endl;
+    cout<<"Inorder Traversal:"<<endl;
     inorder(root);
     cout<<endl;
+    cout<<"Postorder Traversal:"<<endl;
     postorder(root);
     cout<<endl;
-    levelorder(root);
+    cout<<"Levelorder Traversal:"<<endl;
+    vector<vector<int>>ans= levelorder(root);
+    for(int i=0;i<ans.size();i++)
+    {
+        for(int j=0;j<ans[i].size();j++)
+        {
+            cout<<ans[i][j]<<" ";
+        }
+       cout<<endl;
+    }
+
 }
