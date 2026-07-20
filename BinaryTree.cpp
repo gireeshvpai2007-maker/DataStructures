@@ -73,16 +73,23 @@ vector<vector<int>> levelorder(Node* root)
 {
    
    vector<vector<int>>ans;
+     vector<int>level;
     queue<Node*> q;
     q.push(root);
-    
+    q.push(NULL);
     while(!q.empty())
-    { int size=q.size();
-        vector<int>level;
-         for(int i=0;i<size;i++)
-         {
-        Node* temp = q.front();
+    { 
+         Node* temp = q.front(); 
         q.pop();
+        if(temp==NULL)
+        { 
+            ans.push_back(level);
+            level.clear();
+           if(!q.empty())
+            q.push(NULL);
+        continue;
+           
+        }
          level.push_back(temp->data);
         if(temp->left!=NULL)
         {
@@ -91,18 +98,17 @@ vector<vector<int>> levelorder(Node* root)
         if(temp->right!=NULL)
         {
             q.push(temp->right);
-        }
-        
+        }  
+    
+    
     }
-    ans.push_back(level);
-}
  return ans;
 }
 int main()
 {
     vector<int> v = {1,2,-1,-1,3,4,-1,-1,5,-1,-1};  
     Node * root = buildTree(v);
-    
+
     cout<<"Preorder Traversal:"<<endl;
     preorder(root);
     cout<<endl;
