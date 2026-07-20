@@ -31,35 +31,9 @@ Node* buildTree(const vector<int>&v)
 }
 int Height(Node* root)
 {
-    queue<Node*>q;
-    if(root == NULL)
+   if(root==NULL)
      return 0;
-    q.push(root);
-    q.push(NULL);
-    int height=0;
-    while(!q.empty())
-    {
-        Node* temp=q.front();
-        q.pop();
-        if(temp==NULL)
-        {    height++;
-            if(!q.empty())
-            {
-               q.push(NULL);
-            }
-            continue;
-        }
-        if(temp->left!=NULL)
-        {
-            q.push(temp->left);
-        }
-        if(temp->right!=NULL)
-        {
-            q.push(temp->right);
-        }  
-
-    }
-    return height;
+   return 1+max(Height(root->left),Height(root->right));  
 
 }
 int main()
