@@ -44,7 +44,7 @@ vector<int> postOrder(Node* root)
 }
 int main()
 {
-    vector<int> v = {1,2,-1,-1,3,4,-1,-1,5,-1,-1};  
+    vector<int> v = {1,2,4,7,-1,-1,-1,5,-1,-1,3,-1,6,-1,-1};  
     Node * root = buildTree(v);
     vector<int> ans = postOrder(root);
     for(int i=0;i<ans.size();i++)
