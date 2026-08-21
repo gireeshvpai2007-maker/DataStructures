@@ -1,23 +1,38 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include <algorithm>
+#include <iostream>
+#include <vector>
+
 using namespace std;
+
 class Solution {
-public: void maxProfit(vector<int>& prices) {
-        int n = prices.size();
-        if(n == 0) return;
-        int minPrice = prices[0];
-        int maxProfit = 0;
-        
-        for(int i = 1; i < n; i++) {
-                maxProfit = max(maxProfit, prices[i] - minPrice);
-                minPrice = min(minPrice, prices[i]);   
+public:
+    void maxProfit(const vector<int>& prices) {
+        if (prices.empty()) {
+            cout << "No stock prices available." << endl;
+            return;
         }
-        cout<<"Stock bought at: "<<minPrice<<endl;
-        cout<<"Stock sold at: "<<minPrice + maxProfit<<endl;
-        cout << "Maximum Profit: " << maxProfit << endl;
+
+        int minPrice = prices[0];
+        int buyPrice = prices[0];
+        int sellPrice = prices[0];
+        int maximumProfit = 0;
+
+        for (int i = 1; i < static_cast<int>(prices.size()); ++i) {
+            int profit = prices[i] - minPrice;
+            if (profit > maximumProfit) {
+                maximumProfit = profit;
+                buyPrice = minPrice;
+                sellPrice = prices[i];
+            }
+            minPrice = min(minPrice, prices[i]);
+        }
+
+        cout << "Stock bought at: " << buyPrice << endl;
+        cout << "Stock sold at: " << sellPrice << endl;
+        cout << "Maximum Profit: " << maximumProfit << endl;
     }
 };
+
 int main() {
     Solution solution;
     vector<int> prices = {7, 1, 5, 3, 6, 4};
