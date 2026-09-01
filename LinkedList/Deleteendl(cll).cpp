@@ -31,3 +31,10 @@ int deletebegin()
     last=temp;
     free(lastnode);
 }
+int main()
+{
+    int value;
+    deletebegin();
+    printf("Node deleted from the beginning of the circular linked list.\n");
+    return 0;
+}

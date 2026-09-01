@@ -26,3 +26,12 @@ int insertend(int value)
     temp->next=newnode;
     newnode->next=front;
 }
+int main()
+{
+    int value;
+    printf("Enter the value to be inserted at the end: ");
+    scanf("%d",&value);
+    insertend(value);
+    printf("Value %d inserted at the end of the circular linked list.\n", value);
+    return 0;
+}
