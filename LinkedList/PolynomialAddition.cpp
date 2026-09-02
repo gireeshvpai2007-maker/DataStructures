@@ -6,7 +6,7 @@ struct node
 {
     int coeff;int exp;
     struct node *next;
-};
+};  
 void create(int coeff, int exp, struct node **head)
 {
     struct node *newnode=(struct node*)malloc(sizeof(struct node));
