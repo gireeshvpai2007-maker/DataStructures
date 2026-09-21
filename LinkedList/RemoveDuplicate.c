@@ -6,14 +6,13 @@ struct Node
     struct Node* next;
 };
 struct Node* head = NULL;
-struct Node* top = NULL;
 int insertinsort( int data)
 {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->data = data;
     newNode->next = NULL;
 
-    if (head == NULL||head->data < data)
+    if (head == NULL|| data < head->data)
     {
         newNode->next = head;
         head = newNode;
@@ -29,7 +28,6 @@ int insertinsort( int data)
     newNode->next = temp->next;
     temp->next = newNode;
 
-    top=temp;
     return 0;
 }
 int removeDuplicate()
