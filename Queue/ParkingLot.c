@@ -10,8 +10,8 @@ space becomes available due to the departure of other vehicles.*/
 #include <stdlib.h>
 struct Car
 {
-    int regNo[20];
-    int aadharID[20];
+    int regNo;
+    int aadharID;
 };
 int front = -1;
 int rear = -1;
@@ -25,9 +25,9 @@ int arrive(struct Car* car,int regNo, int aadharID,int n)
     {
         if(front == -1)
             front = 0;
-        
-        car[++rear].regNo[0] = regNo;
-        car[++rear].aadharID[0] = aadharID;
+        rear = (rear + 1) % n;
+        car[rear].regNo = regNo;
+        car[rear].aadharID = aadharID;
         return 1;
     }
 }
@@ -40,14 +40,14 @@ int depart(struct Car* car,int n)
     }
     if(front == rear)
     {
-        printf("Car with registration number %d and Aadhar ID %d has departed.\n", car[front].regNo[0], car[front].aadharID[0]);
+        printf("Car with registration number %d and Aadhar ID %d has departed.\n", car[front].regNo, car[front].aadharID);
         front = -1;
         rear = -1;
         return 1;
     }
     else
     {
-        printf("Car with registration number %d and Aadhar ID %d has departed.\n", car[front].regNo[0], car[front].aadharID[0]);
+        printf("Car with registration number %d and Aadhar ID %d has departed.\n", car[front].regNo, car[front].aadharID);
         front = (front + 1) % n;
         return 1;
     }
@@ -64,7 +64,7 @@ int display(struct Car* car,int n)
         printf("Cars in the parking lot:\n");
         for(int i = front; i <= rear; i++)
         {
-            printf("Registration Number: %d, Aadhar ID: %d\n", car[i].regNo[0], car[i].aadharID[0]);
+            printf("Registration Number: %d, Aadhar ID: %d\n", car[i].regNo, car[i].aadharID);
         }
         return 1;
     }
@@ -79,9 +79,13 @@ int display(struct Car* car,int n)
     else
     {
         printf("Cars in the parking lot:\n");
-        for(int i = front; i <= rear; i++)
+        int x = front;
+        while(1)
         {
-            printf("Registration Number: %d, Aadhar ID: %d\n", car[i].regNo[0], car[i].aadharID[0]);
+            printf("Registration Number: %d, Aadhar ID: %d\n", car[x].regNo, car[x].aadharID);
+            if(x == rear)
+                break;
+            x = (x + 1) % n;
         }
         return 1;
     }
@@ -127,4 +131,5 @@ int main()
         }
     }
     while (choice != 4);
+    return 0;
 }
