@@ -4,6 +4,8 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1200&color=7DD3FC&center=true&vCenter=true&width=700&lines=Data+Structures+%26+Algorithms;C%2B%2B+%7C+C+%7C+Problem+Solving;Building+Strong+DSA+Fundamentals;Learning+One+Problem+at+a+Time" />
 
+<br>
+
 ![C](https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c)
 ![C++](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus)
 ![DSA](https://img.shields.io/badge/Focus-DSA-orange?style=for-the-badge)
@@ -13,42 +15,42 @@
 
 ---
 
-# 📖 About
+## 📖 About
 
-This repository contains my implementations and practice problems covering **Data Structures and Algorithms**.
+This repository is my **Data Structures & Algorithms learning and practice workspace**, containing implementations and problem-solving exercises written in **C and C++**.
 
-The repository includes implementations in **C and C++**, with a focus on understanding core data structures, algorithms, pointers, dynamic memory allocation, recursion, and problem-solving techniques.
+The focus is on building strong fundamentals through hands-on implementation of arrays, linked lists, stacks, queues, trees, graphs, dynamic memory allocation, recursion, and algorithmic problem solving.
 
-Each section contains programs based on concepts I am learning and practicing.
-
----
-
-# 🎯 Goals
-
-- ✅ Build strong Data Structures fundamentals
-- ✅ Improve problem-solving and algorithmic thinking
-- ✅ Practice C and C++ implementations
-- ✅ Understand pointers and dynamic memory allocation
-- ✅ Strengthen recursion and algorithmic concepts
-- ✅ Prepare for coding interviews and technical assessments
-- 🚀 Continuously expand the repository with new problems
+Each program is organized by topic and accompanied by concise documentation where applicable.
 
 ---
 
-# 🛠 Tech Stack
+## 🎯 Goals
+
+- Build strong Data Structures fundamentals
+- Improve problem-solving and algorithmic thinking
+- Practice implementation in C and C++
+- Strengthen pointers and dynamic memory concepts
+- Understand recursion and algorithm design
+- Practice real-world data structure applications
+- Gradually move towards interview-level DSA
+
+---
+
+## 🛠️ Tech Stack
 
 | Category | Technologies |
 |----------|--------------|
-| Languages | C, C++ |
-| IDE | Visual Studio Code |
-| Compilers | GCC / G++ |
-| Core Concepts | Arrays, Pointers, Structures, Recursion |
-| Data Structures | Linked Lists, Stacks, Queues, Trees, Graphs |
-| Algorithms | Searching, Shortest Path, Dynamic Programming |
+| **Languages** | C, C++ |
+| **IDE** | Visual Studio Code |
+| **Compilers** | GCC / G++ |
+| **Core Concepts** | Arrays, Pointers, Structures, Recursion, Dynamic Allocation |
+| **Data Structures** | Linked Lists, Stacks, Queues, Trees, Graphs |
+| **Algorithms** | Dijkstra's Algorithm, Dynamic Programming, Expression Evaluation |
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
 ```text
 📦 DataStructures
@@ -76,9 +78,20 @@ Each section contains programs based on concepts I am learning and practicing.
 │   └── Listrepresent.cpp
 │
 ├── 📁 LinkedList
-│   ├── Singly Linked List
-│   ├── Doubly Linked List
-│   └── Circular Linked List
+│   ├── Deletebeginingf(cll).cpp
+│   ├── Deletebeginningl(cll).cpp
+│   ├── Deleteendf(cll).cpp
+│   ├── Deleteendl(cll).cpp
+│   ├── HotelManagment.c
+│   ├── InsertMiddle(dll).cpp
+│   ├── Insertbegin(dll).cpp
+│   ├── Insertbegin(sll).cpp
+│   ├── Insertbeginf(cll).cpp
+│   ├── Insertbeginl(cll).cpp
+│   ├── Insertendf(cll).cpp
+│   ├── Insertendl(cll).cpp
+│   ├── PolynomialAddition.cpp
+│   └── RemoveDuplicate.c
 │
 ├── 📁 Patterns
 │   ├── Bridge.cpp
@@ -114,160 +127,193 @@ Each section contains programs based on concepts I am learning and practicing.
     ├── PreorderTraversal.cpp
     ├── SumNode.c
     └── SumRootToLeaf.cpp
-📚 Topics Covered
-🔢 Arrays
+```
 
-Current practice includes:
+---
 
-Two Sum
-Three Sum
-Four Sum
-Find Duplicate
-Remove Duplicates
-Single Number
-Basic Recursion with Arrays
-🧠 Dynamic Memory Allocation
+## 📚 Topics Covered
 
-Programs involving:
+### 🔢 Arrays
 
-Dynamic memory allocation
-Structures
-Pointers
-Sparse matrices
-Fast Transpose
-Real-world record management applications
-🔗 Linked Lists
+Practice problems involving:
+
+- Two Sum
+- Three Sum
+- Four Sum
+- Find Duplicate
+- Remove Duplicates
+- Single Number
+- Basic recursion with arrays
+
+### 🧠 Dynamic Memory Allocation
+
+Programs focused on:
+
+- Dynamic memory allocation
+- Structures and pointers
+- Sparse matrices
+- Fast Transpose
+- Record-management applications
+
+### 🔗 Linked Lists
 
 Implementations covering:
 
-Singly Linked Lists
-Doubly Linked Lists
-Circular Linked Lists
-Insertion operations
-Deletion operations
-Polynomial addition
-Duplicate removal
-Linked-list based applications
-📚 Stack
+- Singly Linked Lists
+- Doubly Linked Lists
+- Circular Linked Lists
+- Insertion operations
+- Deletion operations
+- Polynomial addition
+- Duplicate removal
+- Application-based linked lists
+
+### 📚 Stack
 
 Stack-based problems and applications including:
 
-Stack operations
-Prefix expressions
-Postfix expressions
-Prefix evaluation
-Postfix evaluation
-Parenthesis validation
-Duplicate parenthesis detection
-Stack reversal
-Application-based problems
-🚶 Queue
+- Stack operations
+- Prefix and postfix expressions
+- Prefix evaluation
+- Postfix evaluation
+- Parenthesis validation
+- Duplicate parenthesis detection
+- Stack reversal
+- Application-based programs
 
-Queue implementations and applications including:
+### 🚶 Queue
 
-Queue using Linked List
-Circular Queue
-Priority Queue
-Unsorted Priority Queue
-Parking Lot System
-Patient Registration System
-🌳 Trees
+Implementations and applications including:
+
+- Queue using Linked List
+- Circular Queue
+- Priority Queue
+- Unsorted Priority Queue
+- Parking Lot System
+- Patient Registration System
+
+### 🌳 Trees
 
 Tree implementations covering:
 
-Preorder Traversal
-Inorder Traversal
-Postorder Traversal
-Level Order Traversal
-Morris Inorder Traversal
-Height of Tree
-Sum of Nodes
-Root-to-Leaf Sum
-🕸 Graphs
+- Preorder Traversal
+- Inorder Traversal
+- Postorder Traversal
+- Level Order Traversal
+- Morris Inorder Traversal
+- Height of Tree
+- Sum of Nodes
+- Root-to-Leaf Sum
 
-Current graph implementations include:
+### 🕸️ Graphs
 
-Graph representation
-Dijkstra's Shortest Path Algorithm
-⚡ Dynamic Programming
+Current graph practice includes:
+
+- Graph Representation
+- Dijkstra's Shortest Path Algorithm
+
+### ⚡ Dynamic Programming
 
 Current practice includes:
 
-Buy and Sell Stocks
+- Buy and Sell Stocks
 
-More dynamic programming problems will be added as the topic progresses.
+### 🎨 Patterns
 
-🎨 Patterns
+Pattern-based programming practice including:
 
-Pattern-based programming practice using loops and structured logic:
+- Bridge Pattern
+- Butterfly Pattern
+- Diamond Square
+- Number Box
 
-Bridge Pattern
-Butterfly Pattern
-Diamond Square
-Number Box
-🧩 Problem-Solving Approach
+---
 
-For each problem, the focus is on:
+## 🧩 Problem-Solving Approach
 
-Understanding the problem
-Identifying the appropriate data structure
-Designing the algorithm
-Implementing the solution
-Testing with different cases
-Understanding time and space complexity
-Improving the solution where possible
-💻 Coding Principles
+For each problem, the general workflow is:
 
-The repository focuses on:
+1. Understand the problem
+2. Identify the required data structure or technique
+3. Design the algorithm
+4. Implement the solution
+5. Test different cases
+6. Analyze time and space complexity
+7. Improve the solution when possible
 
-✔ Clean and readable code
-✔ Understanding the underlying logic
-✔ Proper use of pointers
-✔ Dynamic memory management
-✔ Recursive problem solving
-✔ Efficient data structure usage
-✔ Practical implementations
-✔ Gradual optimization
-📈 Current Progress
-Area	Status
-Arrays	🟢 Active
-Dynamic Allocation	🟢 Active
-Linked Lists	🟢 Active
-Stack	🟢 Active
-Queue	🟢 Active
-Trees	🟢 Active
-Graphs	🟡 Growing
-Dynamic Programming	🟡 Growing
-Patterns	🟢 Active
-Advanced DSA	🔜
-🚀 Future Plans
-Add more array and string problems
-Expand searching and sorting algorithms
-Add more linked-list problems
-Expand tree and BST implementations
-Add heap and priority-queue problems
-Expand graph algorithms
-Add more dynamic programming problems
-Add complexity analysis to every problem
-Add concise problem-specific README files
-Add diagrams where they improve understanding
-Continue building towards interview-level DSA
-⭐ Purpose of This Repository
+---
+
+## 💻 Coding Principles
+
+The repository emphasizes:
+
+- ✔️ Clean and readable implementations
+- ✔️ Understanding the underlying logic
+- ✔️ Proper use of pointers
+- ✔️ Safe dynamic memory management
+- ✔️ Recursive problem solving
+- ✔️ Practical data structure implementations
+- ✔️ Gradual improvement and optimization
+
+---
+
+## 📈 Current Progress
+
+| Area | Status |
+|------|--------|
+| Arrays | 🟢 Active |
+| Dynamic Allocation | 🟢 Active |
+| Linked Lists | 🟢 Active |
+| Stack | 🟢 Active |
+| Queue | 🟢 Active |
+| Trees | 🟢 Active |
+| Graphs | 🟡 Growing |
+| Dynamic Programming | 🟡 Growing |
+| Patterns | 🟢 Active |
+| Advanced DSA | 🔜 Next |
+
+---
+
+## 🚀 Future Plans
+
+- Add more array and string problems
+- Expand searching and sorting algorithms
+- Add more linked-list problems
+- Expand tree and BST implementations
+- Add heap and priority-queue problems
+- Expand graph algorithms
+- Add more dynamic programming problems
+- Add complexity analysis to more programs
+- Continue adding concise problem-specific documentation
+- Add diagrams where they improve understanding
+- Continue building towards interview-level DSA
+
+---
+
+## ⭐ Purpose
 
 This repository serves as my:
 
-📘 DSA learning journal
-💻 Coding practice workspace
-🧠 Problem-solving reference
-🎯 Interview preparation resource
-📚 Revision repository
-📬 Connect With Me
+- 📘 DSA learning journal
+- 💻 Coding practice workspace
+- 🧠 Problem-solving reference
+- 🎯 Interview preparation resource
+- 📚 Revision repository
+
+---
+
+## 📬 Connect With Me
+
 <div align="center">
+
+<a href="https://github.com/gireeshvpai2007-maker">
+  <img src="https://img.shields.io/badge/GitHub-gireeshvpai2007--maker-181717?style=for-the-badge&logo=github" />
+</a>
+
+<br><br>
+
+🌱 **Learning. Building. Improving.**
+
+**One problem at a time. 🚀**
 
 </div>
-<div align="center">
-🌱 Learning. Building. Improving.
-
-One problem at a time. 🚀
-
-</div> ```
