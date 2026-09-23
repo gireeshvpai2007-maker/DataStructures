@@ -1,0 +1,119 @@
+// Online C compiler (editor)
+// Write and run C online using this editor.
+#include<stdlib.h>
+#include <stdio.h>
+struct node
+{
+  int data;
+    struct node *next;
+    struct node* prev;
+};
+struct node * createnode(int val)
+{
+    struct node * new_Node=(struct node*)malloc(sizeof(struct node));
+    new_Node->data=val;
+    new_Node->next=NULL;
+    new_Node->prev=NULL;
+    return new_Node;
+}
+int insertRear(struct node **head,struct node ** tail,int val)
+{
+    struct node *a=createnode(val);
+    if(*head==NULL)
+    {
+        
+        *tail= *head=a;
+        return 0;
+    }
+    (*tail)->next=a;
+    a->prev=(*tail);
+    (*tail)=a;
+    return 0;
+}
+int deleteFront(struct node **head,struct node** tail)
+{
+     if(*head==NULL)
+     {
+         printf("List is empty\n");
+         return 0;
+     }
+    struct node *temp=*head;
+    if((*head)==(*tail))
+    {
+        *head=NULL;
+        *tail=NULL;
+    }
+    (*head)->next->prev=NULL;
+    *head=(*head)->next;
+    free(temp);
+}
+int insertPos(struct node** head ,struct node** tail,int val,int pos)
+{
+    struct node *a=createnode(val);
+    struct node *temp=*head;
+    if(pos == 1)
+{
+    a->next = *head;
+
+    if(*head != NULL)
+        (*head)->prev = a;
+    else
+        *tail = a;
+
+    *head = a;
+    return 0;
+}
+    for(int i=1;i<pos-1&&temp!=NULL;i++)
+        {
+            temp=temp->next;
+        }
+    a->next=temp->next;
+    a->prev=temp;
+    if(temp->next!=NULL)
+    {
+       temp->next->prev=a;   
+    }
+    else
+    {
+        *tail=a;
+    }
+    temp->next=a;
+}
+int display(struct node ** head)
+{
+    struct node *temp=*head;
+    printf("Linked List:\n");
+    while(temp!=NULL)
+        {   printf("%d ",temp->data);
+            temp=temp->next;
+        }
+    printf("\n");
+    return 0;
+}
+int main() {
+
+   struct node *head=NULL,*tail=NULL;
+    int choice ;
+    do 
+        {
+            printf("1.InsertRear,2.DeleteFront 3.InsertPosition,4.Display,5.Exit\n");
+            scanf("%d",&choice);
+            switch(choice)
+                {
+                    case 1: printf("Enter the value to be inserted\n");
+                    int val;
+                    scanf("%d",&val);
+                    insertRear(&head,&tail,val);break;
+                    case 2:deleteFront(&head,&tail);break;
+                    case 3:printf("Enter the value and Position\n");
+                    int pos;
+                        scanf("%d %d",&val,&pos);
+                    insertPos(&head,&tail,val,pos);break;
+                    case 4: display(&head);break;
+                    case 5: printf("Exiting...\n");break;
+                    default:printf("Invalid Choice\n");
+                }
+        }while(choice!=5);
+    return 0;
+}
+
