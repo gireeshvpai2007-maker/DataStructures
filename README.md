@@ -1,216 +1,319 @@
-# 🌳 Data Structures & Algorithms in C++
+# 🌳 Data Structures & Algorithms
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1200&color=7DD3FC&center=true&vCenter=true&width=700&lines=Mastering+Data+Structures+%26+Algorithms;C%2B%2B+%7C+STL+%7C+Problem+Solving;Interview+Preparation+Journey;Learning+One+Problem+Every+Day" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1200&color=7DD3FC&center=true&vCenter=true&width=700&lines=Data+Structures+%26+Algorithms;C%2B%2B+%7C+C+%7C+Problem+Solving;Building+Strong+DSA+Fundamentals;Learning+One+Problem+at+a+Time" />
 
-![Language](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=cplusplus)
-![STL](https://img.shields.io/badge/Library-STL-blue?style=for-the-badge)
+<br>
+
+![C](https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c)
+![C++](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus)
+![DSA](https://img.shields.io/badge/Focus-DSA-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-![Problems](https://img.shields.io/badge/Problems-Growing-orange?style=for-the-badge)
 
 </div>
 
 ---
 
-# 📖 About
+## 📖 About
 
-This repository documents my journey of learning **Data Structures & Algorithms** in **C++**.
+This repository is my **Data Structures & Algorithms learning and practice workspace**, containing implementations and problem-solving exercises written in **C and C++**.
 
-The goal is to build strong problem-solving skills while writing clean, efficient, and interview-ready implementations.
+The focus is on building strong fundamentals through hands-on implementation of arrays, linked lists, stacks, queues, trees, graphs, dynamic memory allocation, recursion, and algorithmic problem solving.
 
-Topics range from basic arrays to advanced trees and graph algorithms, with each implementation focusing on correctness, readability, and time complexity.
-
----
-
-# 🎯 Goals
-
-- ✅ Strengthen DSA fundamentals
-- ✅ Master C++ STL
-- ✅ Prepare for Software Engineering interviews
-- ✅ Improve problem-solving skills
-- ✅ Build a structured DSA repository
+Each program is organized by topic and accompanied by concise documentation where applicable.
 
 ---
 
-# 🛠 Tech Stack
+## 🎯 Goals
+
+- Build strong Data Structures fundamentals
+- Improve problem-solving and algorithmic thinking
+- Practice implementation in C and C++
+- Strengthen pointers and dynamic memory concepts
+- Understand recursion and algorithm design
+- Practice real-world data structure applications
+- Gradually move towards interview-level DSA
+
+---
+
+## 🛠️ Tech Stack
 
 | Category | Technologies |
-|-----------|--------------|
-| Language | C++17 |
-| IDE | Visual Studio Code |
-| Compiler | g++ |
-| Concepts | STL, Recursion, Two Pointers, Binary Search, Trees, Graphs |
+|----------|--------------|
+| **Languages** | C, C++ |
+| **IDE** | Visual Studio Code |
+| **Compilers** | GCC / G++ |
+| **Core Concepts** | Arrays, Pointers, Structures, Recursion, Dynamic Allocation |
+| **Data Structures** | Linked Lists, Stacks, Queues, Trees, Graphs |
+| **Algorithms** | Dijkstra's Algorithm, Dynamic Programming, Expression Evaluation |
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
-```
+```text
 📦 DataStructures
 │
-├── Arrays
-├── Strings
-├── Sorting
-├── Searching
-├── Two Pointers
-├── Sliding Window
-├── Recursion
-├── Backtracking
-├── Linked List
-├── Stack
-├── Queue
-├── Binary Tree
-├── Binary Search Tree
-├── Heap
-├── Hashing
-├── Graph
-├── Dynamic Programming
-└── README.md
+├── 📁 Arrays
+│   ├── 2sum.cpp
+│   ├── 3sum.cpp
+│   ├── 4sum.cpp
+│   ├── FindDuplicate.cpp
+│   ├── RecursionBasic.cpp
+│   ├── RemoveDuplicate.c
+│   └── SingleNum.cpp
+│
+├── 📁 DynamicAllocation
+│   ├── Bank.c
+│   ├── FastTransponse.c
+│   ├── Library.c
+│   └── Office.c
+│
+├── 📁 DynamicProgramming
+│   └── BuyandSellstocks.cpp
+│
+├── 📁 Graph
+│   ├── DijkstraAlgorithm.cpp
+│   └── Listrepresent.cpp
+│
+├── 📁 LinkedList
+│   ├── Deletebeginingf(cll).cpp
+│   ├── Deletebeginningl(cll).cpp
+│   ├── Deleteendf(cll).cpp
+│   ├── Deleteendl(cll).cpp
+│   ├── HotelManagment.c
+│   ├── InsertMiddle(dll).cpp
+│   ├── Insertbegin(dll).cpp
+│   ├── Insertbegin(sll).cpp
+│   ├── Insertbeginf(cll).cpp
+│   ├── Insertbeginl(cll).cpp
+│   ├── Insertendf(cll).cpp
+│   ├── Insertendl(cll).cpp
+│   ├── PolynomialAddition.cpp
+│   └── RemoveDuplicate.c
+│
+├── 📁 Patterns
+│   ├── Bridge.cpp
+│   ├── Butterfly.cpp
+│   ├── DiamondSquare.cpp
+│   └── NumberBox.cpp
+│
+├── 📁 Queue
+│   ├── CircularQueue.c
+│   ├── ParkingLot.c
+│   ├── Patientregister(priorityqueue).cpp
+│   ├── QueueOperation(LL).c
+│   └── UnsortedProrityQueue.cpp
+│
+├── 📁 Stack
+│   ├── CollegeRanking.c
+│   ├── DuplicateParenthesis.cpp
+│   ├── Evalpostfix.cpp
+│   ├── Midsemprep1.c
+│   ├── Revstack.c
+│   ├── Studenttrack.c
+│   ├── ValidParanthesis.cpp
+│   ├── evalprefix.cpp
+│   ├── postfix.cpp
+│   └── prefix.cpp
+│
+└── 📁 Tree
+    ├── HeightTree.cpp
+    ├── InorderTraversal.cpp
+    ├── LevelOrderTraversal.cpp
+    ├── MorrisInorder.cpp
+    ├── PostOrderTraversal.cpp
+    ├── PreorderTraversal.cpp
+    ├── SumNode.c
+    └── SumRootToLeaf.cpp
 ```
 
 ---
 
-# 📚 Topics Covered
+## 📚 Topics Covered
 
-## Arrays
+### 🔢 Arrays
+
+Practice problems involving:
 
 - Two Sum
 - Three Sum
 - Four Sum
+- Find Duplicate
 - Remove Duplicates
-- Rotate Array
-- Merge Sorted Arrays
+- Single Number
+- Basic recursion with arrays
 
----
+### 🧠 Dynamic Memory Allocation
 
-## Strings
+Programs focused on:
 
-- Count and Say
-- Palindrome Problems
-- String Manipulation
+- Dynamic memory allocation
+- Structures and pointers
+- Sparse matrices
+- Fast Transpose
+- Record-management applications
 
----
+### 🔗 Linked Lists
 
-## Searching & Sorting
+Implementations covering:
 
-- Binary Search
-- Bubble Sort
-- Selection Sort
-- Insertion Sort
-- Merge Sort
-- Quick Sort
+- Singly Linked Lists
+- Doubly Linked Lists
+- Circular Linked Lists
+- Insertion operations
+- Deletion operations
+- Polynomial addition
+- Duplicate removal
+- Application-based linked lists
 
----
+### 📚 Stack
 
-## Linked List
+Stack-based problems and applications including:
 
-- Traversal
-- Insertion
-- Deletion
-- Reverse Linked List
+- Stack operations
+- Prefix and postfix expressions
+- Prefix evaluation
+- Postfix evaluation
+- Parenthesis validation
+- Duplicate parenthesis detection
+- Stack reversal
+- Application-based programs
 
----
+### 🚶 Queue
 
-## Stack & Queue
+Implementations and applications including:
 
-- Stack using STL
-- Queue using STL
-- Applications
+- Queue using Linked List
+- Circular Queue
+- Priority Queue
+- Unsorted Priority Queue
+- Parking Lot System
+- Patient Registration System
 
----
+### 🌳 Trees
 
-## Binary Trees
+Tree implementations covering:
 
-- Tree Construction
 - Preorder Traversal
 - Inorder Traversal
 - Postorder Traversal
 - Level Order Traversal
+- Morris Inorder Traversal
 - Height of Tree
-- Count Nodes
 - Sum of Nodes
-- Diameter (Coming Soon)
+- Root-to-Leaf Sum
+
+### 🕸️ Graphs
+
+Current graph practice includes:
+
+- Graph Representation
+- Dijkstra's Shortest Path Algorithm
+
+### ⚡ Dynamic Programming
+
+Current practice includes:
+
+- Buy and Sell Stocks
+
+### 🎨 Patterns
+
+Pattern-based programming practice including:
+
+- Bridge Pattern
+- Butterfly Pattern
+- Diamond Square
+- Number Box
 
 ---
 
-## Graphs
+## 🧩 Problem-Solving Approach
 
-- BFS
-- DFS
-- (More Coming Soon)
+For each problem, the general workflow is:
 
----
-
-# 💻 Coding Style
-
-✔ Clean and readable code
-
-✔ STL-based implementations
-
-✔ Optimized solutions
-
-✔ Proper indentation
-
-✔ Interview-oriented approach
+1. Understand the problem
+2. Identify the required data structure or technique
+3. Design the algorithm
+4. Implement the solution
+5. Test different cases
+6. Analyze time and space complexity
+7. Improve the solution when possible
 
 ---
 
-# 📈 Progress
+## 💻 Coding Principles
 
-| Topic | Status |
-|--------|--------|
-| Arrays | ✅ |
-| Strings | ✅ |
-| Sorting | ✅ |
-| Searching | ✅ |
-| Linked List | 🟡 |
-| Stack | 🟡 |
-| Queue | 🟡 |
-| Trees | 🟢 In Progress |
-| BST | 🔜 |
-| Heap | 🔜 |
-| Graph | 🔜 |
-| DP | 🔜 |
+The repository emphasizes:
+
+- ✔️ Clean and readable implementations
+- ✔️ Understanding the underlying logic
+- ✔️ Proper use of pointers
+- ✔️ Safe dynamic memory management
+- ✔️ Recursive problem solving
+- ✔️ Practical data structure implementations
+- ✔️ Gradual improvement and optimization
 
 ---
 
-# 🚀 Future Plans
+## 📈 Current Progress
 
-- Complete Striver DSA Sheet
-- Complete LeetCode Top Interview Questions
-- Add complexity analysis to every solution
-- Add problem statements
-- Add optimized approaches
-- Add diagrams for tree and graph problems
-
----
-
-# ⭐ Why this Repository?
-
-This repository is designed to serve as:
-
-- 📘 Personal learning journal
-- 💼 Interview preparation resource
-- 🚀 Competitive programming reference
-- 📚 Revision notes
+| Area | Status |
+|------|--------|
+| Arrays | 🟢 Active |
+| Dynamic Allocation | 🟢 Active |
+| Linked Lists | 🟢 Active |
+| Stack | 🟢 Active |
+| Queue | 🟢 Active |
+| Trees | 🟢 Active |
+| Graphs | 🟡 Growing |
+| Dynamic Programming | 🟡 Growing |
+| Patterns | 🟢 Active |
+| Advanced DSA | 🔜 Next |
 
 ---
 
-# 📬 Connect With Me
+## 🚀 Future Plans
+
+- Add more array and string problems
+- Expand searching and sorting algorithms
+- Add more linked-list problems
+- Expand tree and BST implementations
+- Add heap and priority-queue problems
+- Expand graph algorithms
+- Add more dynamic programming problems
+- Add complexity analysis to more programs
+- Continue adding concise problem-specific documentation
+- Add diagrams where they improve understanding
+- Continue building towards interview-level DSA
+
+---
+
+## ⭐ Purpose
+
+This repository serves as my:
+
+- 📘 DSA learning journal
+- 💻 Coding practice workspace
+- 🧠 Problem-solving reference
+- 🎯 Interview preparation resource
+- 📚 Revision repository
+
+---
+
+## 📬 Connect With Me
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-gireeshvpai2007--maker-181717?style=for-the-badge&logo=github)](https://github.com/gireeshvpai2007-maker)
+<a href="https://github.com/gireeshvpai2007-maker">
+  <img src="https://img.shields.io/badge/GitHub-gireeshvpai2007--maker-181717?style=for-the-badge&logo=github" />
+</a>
 
-</div>
+<br><br>
 
----
+🌱 **Learning. Building. Improving.**
 
-<div align="center">
-
-### ⭐ If you find this repository helpful, consider giving it a Star!
-
-**Happy Coding! 🚀**
+**One problem at a time. 🚀**
 
 </div>
