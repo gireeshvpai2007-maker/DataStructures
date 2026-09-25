@@ -26,8 +26,9 @@ int deletebegin()
         temp=temp->next;
     }
     temp->next=front->next;
-    front=front->next;
     temp=front;
+    front=front->next;
+    
     free(temp);
 }
 int main()
